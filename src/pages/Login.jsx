@@ -41,7 +41,7 @@ export default function Login() {
   // Candidate → Check Identity
 
   const identityCheck =
-  await API.get("/identity/check");
+  await API.get("https://hacksphere-backend-zut6.onrender.com/api/identity/check");
 
 
   if(identityCheck.data.exists){
