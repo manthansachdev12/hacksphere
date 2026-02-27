@@ -14,7 +14,7 @@ export default function Login() {
 
  try{
 
-  const res = await API.post("https://hacksphere-backend-zut6.onrender.com/api/auth/login",{
+  const res = await API.post("/auth/login",{
 
    email,
    password
@@ -41,7 +41,7 @@ export default function Login() {
   // Candidate → Check Identity
 
   const identityCheck =
-  await API.get("https://hacksphere-backend-zut6.onrender.com/api/identity/check");
+  await API.get("/identity/check");
 
 
   if(identityCheck.data.exists){
