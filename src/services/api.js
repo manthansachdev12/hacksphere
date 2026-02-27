@@ -2,7 +2,7 @@ import axios from "axios";
 
 const API = axios.create({
 
- baseURL:"https://hacksphere-backend-zut6.onrender.com"
+ baseURL:"https://hacksphere-backend-zut6.onrender.com/api"
 
 });
 
